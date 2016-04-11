@@ -5,13 +5,14 @@ var Route = ReactRouter.Route;
 var IndexRoute = ReactRouter.IndexRoute;
 var hashHistory = ReactRouter.hashHistory;
 var Main = require('../containers/Main');
-var HomeContainer = require('../containers/HomeContainer');
+var StartMatchContainer = require('../containers/StartMatchContainer');
+var MatchContainer = require('../containers/MatchContainer');
 
 var routes = (
   <Router history={hashHistory}>
     <Route path='/' component={Main}>
-      <IndexRoute component={HomeContainer} />
-      {/* <Route path='somePath' header='Title' component={NewContainer} /> */}
+      <IndexRoute component={StartMatchContainer} />
+      <Route path='match/:matchName' component={MatchContainer} /> 
     </Route>
   </Router>
 );

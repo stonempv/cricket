@@ -1,6 +1,6 @@
 {
-  "name": "app-name",
-  "version": "1.0.0",
+  "name": "cricke-scorer",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.9.1",
+    "pouchdb": "^5.3.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
     "react-router": "^2.0.1"
